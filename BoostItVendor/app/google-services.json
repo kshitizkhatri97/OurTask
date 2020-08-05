@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "737095849799",
+    "firebase_url": "https://boostitvendor-5ed39.firebaseio.com",
+    "project_id": "boostitvendor-5ed39",
+    "storage_bucket": "boostitvendor-5ed39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737095849799:android:e8cb6c9a4c703b436b1e62",
+        "android_client_info": {
+          "package_name": "com.example.boostitvendor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737095849799-eth1aged43e44b4qmapvr15kv17dp176.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.boostitvendor",
+            "certificate_hash": "dd5d310099f585a75128a6a937dc84ca0febe203"
+          }
+        },
+        {
+          "client_id": "737095849799-td9av937mue29f1fgqukinu45k6du2dq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBodwl7s0WAJg1ljhRLWDX50GRPWg-sLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737095849799-td9av937mue29f1fgqukinu45k6du2dq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

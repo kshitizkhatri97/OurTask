@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffSection.OrdersPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hello"
+            android:id="@+id/helloText"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:text="Profile"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:onClick="profile"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/log_out"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="logOut"
+
+                android:text="Log Out"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mlogin"
+        android:layout_below="@+id/header"
+        android:gravity="right"
+        android:paddingVertical="0dp"
+        >
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Master login"
+            android:textSize="12dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:onClick="master"/>
+    </LinearLayout-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tabs"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/orders"
+            android:enabled="false"
+            android:text="New Orders"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="On going"
+            android:id="@+id/ongoing"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/delivered"
+            android:text="Delivered"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame_container"
+            android:layout_below="@+id/tabs">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#DDDDDD"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

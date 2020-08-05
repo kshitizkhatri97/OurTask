@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="#EFEFEF ">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:id="@+id/orddeet_id"
+            android:layout_marginLeft="8dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/staff_id"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/cust_namedeet"
+            android:textStyle="bold"
+            />
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/mob"
+            /-->
+
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/staff_fname"
+            /-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/status"
+            android:textStyle="bold"
+            />
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/isdel"
+            /-->
+        <!--TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/paytype"
+            /-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/amount"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/settled"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+            android:gravity="right"
+            android:padding="10dp"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
